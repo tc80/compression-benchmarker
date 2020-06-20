@@ -13,7 +13,7 @@ For example:
 More examples can be found in this repo's [input.txt](index.txt).
 
 ## Env
-The application relies on an environment variable `CDNJS_PATH`. This variable must contain the path to the local [GitHub cdnjs repo](https://github.com/cdnjs/cdnjs) after cloning.
+The application relies on an environment variable `CDNJS_PATH`. This variable must contain the path to the local [cdnjs GitHub repo](https://github.com/cdnjs/cdnjs) after cloning.
 
 For example:
 `export CDNJS_PATH="/tmp/cdnjs/cdnjs"`
@@ -21,7 +21,7 @@ For example:
 Here, `/tmp/cdnjs/cdnjs/` will contain the `ajax/` directory.
 
 ## Output
-In order for this tool to work, the algorithm *must* output its result to STDOUT. This is because this tool focuses on the size of the resulting output, not writing the output itself to a file.
+In order for this tool to work, the algorithm *must* output its result to `STDOUT`. This is because this tool focuses on the size of the resulting output, not writing the output itself to a file.
 
 ## Build
 
@@ -37,11 +37,11 @@ For example, to benchmark `zopfli -i1000 --gzip` on all libaries in `input.txt`,
 
 `./compress zopfli -c -i1000 --gzip`
 
-Note that we added `-c` here to ensure the output is written to STDOUT.
+Note that we added `-c` here to ensure the output is written to `STDOUT`.
 
 ## Built-In Algorithms
 
-The provided `Makefile` contains a number of built-in algorithms.
+The provided `Makefile` contains a number of built-in options.
 
 - [x] uncompressed
 - [x] [zopfli](https://github.com/google/zopfli)
