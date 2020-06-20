@@ -12,7 +12,7 @@ For example:
 
 More examples can be found in this repo's [input.txt](index.txt).
 
-## Env
+## Environment
 The application relies on an environment variable `CDNJS_PATH`. This variable must contain the path to the local [cdnjs GitHub repo](https://github.com/cdnjs/cdnjs) after cloning.
 
 For example:
