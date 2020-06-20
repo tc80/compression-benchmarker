@@ -11,8 +11,11 @@ import (
 )
 
 const (
-	inputFile    = "input.txt"  // for now, just reading from input file containing libs
-	cdnjsPathEnv = "CDNJS_PATH" // env var containing the path to the local cdnjs repo, ex. "/tmp/cdnjs/cdnjs" (inside this dir is the ajax dir)
+	inputFile = "input.txt" // for now, just reading from input file containing libs
+	// environmental variable containing the path to the local cdnjs repo
+	// which is the same as the path to the directory https://github.com/cdnjs/cdnjs after cloning
+	// 		ex. "/tmp/cdnjs/cdnjs" (inside this dir is the ajax/ dir)
+	cdnjsPathEnv = "CDNJS_PATH"
 )
 
 var (
