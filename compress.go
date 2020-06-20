@@ -28,7 +28,7 @@ func check(e interface{}) {
 
 // NOTES:
 // - compression algorithm and flags must be input as command-line arguments
-// 		- ex. go run compress.go brotli -c -q 11
+// 		- ex. ./compress brotli -c -q 11
 //
 //	- to see uncompressed sizes, simply use 'cat' as the algorithm type
 // 		- ex. go run compress.go cat
@@ -37,7 +37,7 @@ func check(e interface{}) {
 // from the input file, in their respective order
 func main() {
 	if len(os.Args) == 1 {
-		log.Fatalln("Missing compression algorithm command-line arguments. Ex. zopfli -c -i1000 --gzip")
+		log.Fatalln("Missing compression algorithm command-line arguments. Ex. ./compress zopfli -c -i1000 --gzip")
 	}
 	alg, flags := os.Args[1], os.Args[2:]
 
