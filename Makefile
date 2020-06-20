@@ -1,4 +1,4 @@
-# Makefile for building and running the ICMP ping app.
+# Makefile for building and running the loseless compression benchmarking tool.
 # @author tc80, June 2020
 #
 # Note, project was built with:
