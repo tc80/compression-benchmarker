@@ -10,7 +10,7 @@ The application reads from `input.txt`, which contains the list of target cdnjs 
 For example:
 `/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2`
 
-More examples can be found in this repo's [input.txt](index.txt).
+More examples can be found in this repo's [input.txt](input.txt).
 
 ## Environment
 The application relies on an environment variable `CDNJS_PATH`. This variable must contain the path to the local [cdnjs GitHub repo](https://github.com/cdnjs/cdnjs) after cloning.
