@@ -51,6 +51,9 @@ The provided `Makefile` contains a number of built-in options.
 - [x] [brotli](https://github.com/google/brotli)
     - [x] q5
     - [x] q11
+- [x] [gzip](https://www.gzip.org/)
+    - [x] 5
+    - [x] 9
 
 To run all of them at once:
 

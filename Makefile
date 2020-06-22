@@ -14,7 +14,7 @@ all:
 	mkdir -p $(OUTPUT_DIR)
 
 # runs all provided examples and writes results to file
-run: uncompressed zopfli-gzip zopfli-zlib zopfli-deflate brotli-q5 brotli-q11
+run: uncompressed zopfli-gzip zopfli-zlib zopfli-deflate brotli-q5 brotli-q11 gzip-5 gzip-9
 
 # view uncompressed sizes
 uncompressed:
@@ -39,6 +39,14 @@ brotli-q5:
 # view brotli q11
 brotli-q11:
 	./$(EXEC) brotli -c -q 11 > $(OUTPUT_DIR)/brotli-q11.csv
+
+# view gzip compression 5
+gzip-5:
+	./$(EXEC) gzip -c -5 > $(OUTPUT_DIR)/gzip-5.csv
+
+# view gzip compression 9
+gzip-9:
+	./$(EXEC) gzip -c -9 > $(OUTPUT_DIR)/gzip-9.csv
 
 # cleans the executable and output dir
 clean: 
